@@ -36,19 +36,27 @@ Every next state needs a direction associated with it even if it doesn't use
 relative directions (the direction is just ignored when the state doesn't use
 relative directions).
 
-So an entire rule would look something like `if v and not left try forward then nextState reverse`
+So an entire rule would look something like `if v and not left try forward then
+nextState reverse`
 
 Rules are separated by the `next` keyword.
 
-The last rule can optionally be an `otherwise` statement that just takes a next state and state direction: `otherwise nextState <`.
-This is used in the case that all other rules for this state were not used and indicates that the bot should `stay` and go to the next state.
+The last rule can optionally be an `otherwise` statement that just takes a next
+state and state direction: `otherwise nextState <`.
+This is used in the case that all other rules for this state were not used and
+indicates that the bot should `stay` and go to the next state.
 
-Some shorthands are `try ahead` means `try forward then thisState forward` and `try nextState ^` means `try ^ then nextState ^`.
+Some shorthands are `try ahead` means `try forward then thisState forward` and
+`try nextState ^` means `try ^ then nextState ^`.
 
 Extra notes about the syntax:
 
 * All syntax is case insensitive
-* State definition names can include any character other than whitespace and colons
-* Rules always assume the preceding rules were not met, so if the last rule checked `if forward`, you don't need to say `if not forward` in the following statements!
-* I didn't implement error handling, so if you enter illogical rules like `if not left and left`, it will fail silently by not including this rule.
-Other illogical statements may fail with nondescriptive errors.
+* State definition names can include any character other than whitespace and
+  colons
+* Rules always assume the preceding rules were not met, so if the last rule
+  checked `if forward`, you don't need to say `if not forward` in the following
+  statements!
+* I didn't implement error handling, so if you enter illogical rules like `if
+  not left and left`, it will fail silently by not including this rule.
+  Other illogical statements may fail with nondescriptive errors.

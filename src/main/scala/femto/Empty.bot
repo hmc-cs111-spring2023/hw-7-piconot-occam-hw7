@@ -1,0 +1,13 @@
+start moveToEdge <
+
+to moveToEdge:
+    try ahead
+    otherwise moveToCorner ^
+
+to moveToCorner:
+    try ahead
+    otherwise fill v
+
+to fill:
+    try ahead
+    next try > then fill reverse

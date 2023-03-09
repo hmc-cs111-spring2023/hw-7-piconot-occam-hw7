@@ -19,7 +19,7 @@ to talk with about language design and implementation issues._
 ## Checklist
 
 - [x] Design a new syntax for Picobot
-  - [ ] Describe your design in `design.md`
+  - [x] Describe your design in `design.md`
   - [x] Before you implement the syntax, write the "empty room" program in
         `example-ideal.txt`
 - [x] Choose whether you will implement your syntax as an internal or external DSL,
@@ -35,7 +35,7 @@ to talk with about language design and implementation issues._
     - Include at least two example programs
       - [x] `src/main/scala/piconot/external/Empty.bot`
       - [x] `src/main/scala/piconot/external/RightHand.bot`
-    - [ ] Provide instructions for how to run piconot in `build.md`
+    - [x] Provide instructions for how to run piconot in `build.md`
     - [x] Describe your implementation process in `evaluation.md`
 - [ ] Give feedback on another design and implementation
 

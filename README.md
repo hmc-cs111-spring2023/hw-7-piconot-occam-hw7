@@ -18,11 +18,11 @@ to talk with about language design and implementation issues._
 
 ## Checklist
 
-- [ ] Design a new syntax for Picobot
-  - [ ] Describe your design in `design.md`
-  - [ ] Before you implement the syntax, write the "empty room" program in
+- [x] Design a new syntax for Picobot
+  - [x] Describe your design in `design.md`
+  - [x] Before you implement the syntax, write the "empty room" program in
         `example-ideal.txt`
-- [ ] Choose whether you will implement your syntax as an internal or external DSL,
+- [x] Choose whether you will implement your syntax as an internal or external DSL,
       then complete one of the following:
   - [ ] Implement your new syntax as an internal DSL
     - [ ] Add files, as needed, to implement your syntax
@@ -30,13 +30,13 @@ to talk with about language design and implementation issues._
       - [ ] `src/main/scala/piconot/internal/Empty.scala`
       - [ ] `src/main/scala/piconot/internal/RightHand.scala`
     - [ ] Describe your implementation process in `evaluation.md`
-  - [ ] Implement your new syntax as an external DSL, using parser combinators
-    - [ ] Add files, as needed, to implement your syntax
+  - [x] Implement your new syntax as an external DSL, using parser combinators
+    - [x] Add files, as needed, to implement your syntax
     - Include at least two example programs
-      - [ ] `src/main/scala/piconot/external/Empty.bot`
-      - [ ] `src/main/scala/piconot/external/RightHand.bot`
-    - [ ] Provide instructions for how to run piconot in `build.md`
-    - [ ] Describe your implementation process in `evaluation.md`
+      - [x] `src/main/scala/piconot/external/Empty.bot`
+      - [x] `src/main/scala/piconot/external/RightHand.bot`
+    - [x] Provide instructions for how to run piconot in `build.md`
+    - [x] Describe your implementation process in `evaluation.md`
 - [ ] Give feedback on another design and implementation
 
 ## Warm-up: Picobot

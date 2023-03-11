@@ -1,0 +1,6 @@
+start go ^
+
+to go:
+    try right then go right
+    next try ahead
+    otherwise go reverse
